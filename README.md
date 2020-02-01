@@ -38,6 +38,16 @@ class AnimationsTabController: UITabBarController {
 }
 ```
 
+## UIKit animatable properties 
+
+1. frame
+2. bounds
+3. center
+4. transform
+5. alpha
+6. backgroundColor
+7. contentStretch
+
 ## Adding transformm and layer animations to a view 
 
 ```swift 
