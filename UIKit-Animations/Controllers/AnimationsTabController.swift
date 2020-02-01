@@ -17,7 +17,6 @@ class AnimationsTabController: UITabBarController {
   }()
   
   private lazy var constraintsAnimationVC: ConstraintsAnimationController = {
-    
     // ConstraintsAnimationController instance from storyboard
     
     // step 1: get instance of storboard
