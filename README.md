@@ -48,6 +48,39 @@ class AnimationsTabController: UITabBarController {
 6. backgroundColor
 7. contentStretch
 
+## CALayer animatable properties 
+
+<details> 
+  <summary>CALayer animatable properties</summary> 
+<ul> 
+  <li>anchorPoint</li>
+  <li>backgroundColor</li>
+  <li>backgroundColorFilters</li>
+  <li>borderColor</li>
+  <li>borderWidth</li>
+  <li>bounds</li>
+  <li>compositingFilter</li>
+  <li>contents</li>
+  <li>contentRect</li>
+  <li>cornerRadius</li>
+  <li>doubleSided</li>
+  <li>filters</li>
+  <li>hidden</li>
+  <li>mask</li>
+  <li>maskToBounds</li>
+  <li>opacity</li>
+  <li>position</li>
+  <li>shadowColor</li>
+  <li>shadowOffset</li>
+  <li>shadowPath</li>
+  <li>shadowRadius</li>
+  <li>sublayers</li>
+  <li>sublayerTransform</li>
+  <li>transform</li>
+  <li>zPosition</li>
+</ul> 
+</details>
+
 ## Adding transformm and layer animations to a view 
 
 ```swift 
