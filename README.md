@@ -67,3 +67,11 @@ UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.3, initi
   self.view.layoutIfNeeded()
 }, completion: nil)
 ```
+
+## Reading resources 
+
+1. [Animation properties in UIKit](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/AnimatingViews/AnimatingViews.html)
+1. [Animation properties on a CALayer](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/AnimatableProperties/AnimatableProperties.html)
+
+![degrees and radians](https://www.1728.org/degrees.png)
+
