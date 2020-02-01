@@ -19,15 +19,23 @@
                                 <rect key="frame" x="20" y="718" width="374" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVT-cM-Fvq">
-                                        <rect key="frame" x="0.0" y="0.0" width="167" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="44"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Up"/>
                                         <connections>
                                             <action selector="animateViewUp:" destination="g3n-xM-eJy" eventType="touchUpInside" id="e0q-eS-nJK"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEu-qr-rrJ">
+                                        <rect key="frame" x="103.5" y="0.0" width="63.5" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxj-ab-Q7q">
+                                        <rect key="frame" x="207" y="0.0" width="63.5" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="116-f9-PnU">
-                                        <rect key="frame" x="207" y="0.0" width="167" height="44"/>
+                                        <rect key="frame" x="310.5" y="0.0" width="63.5" height="44"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Down"/>
                                         <connections>
@@ -60,6 +68,8 @@
                     </view>
                     <connections>
                         <outlet property="box" destination="A25-Dy-PGV" id="b7o-fb-Me2"/>
+                        <outlet property="downButton" destination="116-f9-PnU" id="mem-Gm-BBT"/>
+                        <outlet property="upButton" destination="tVT-cM-Fvq" id="8kg-np-Oos"/>
                         <outlet property="viewYConstraint" destination="1Le-D4-pRI" id="9UV-Px-e09"/>
                     </connections>
                 </viewController>

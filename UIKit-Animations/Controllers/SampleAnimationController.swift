@@ -21,19 +21,14 @@ class SampleAnimationController: UIViewController {
     view.backgroundColor = .systemBackground
   }
   
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(true)
-    //pulsatingAnimation()
-  }
-  
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
     scaleAnimation()
+    //pulsatingAnimation()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(true)
-    
     // function to reset defaults so animations start from their initial state when
     // the view controller return as the first responder and viewWillAppear gets called
     resetDefaultsForAnimation()
@@ -47,7 +42,6 @@ class SampleAnimationController: UIViewController {
   }
   
   private func scaleAnimation() {
-    
     // properties we could animate
     /*
      - alpha
@@ -59,9 +53,9 @@ class SampleAnimationController: UIViewController {
      - shadow
      - opacity
      - tranform: scale, rotate, translate
-    */
+     */
     
-    // any transform value of 1.0 represents the identity of the view
+    // any transform value of 1.0 represents the identity of the view (original frame values)
     
     UIView.animate(withDuration: 1.0, delay: 0.0, options: [], animations: {
       self.sampleAnimationsView.pursuitLogo.transform = CGAffineTransform(scaleX: 20.0, y: 20.0)
