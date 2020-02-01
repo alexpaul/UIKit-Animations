@@ -62,18 +62,42 @@
 		579AEA9B23E47E2200741E2F /* UIKit-Animations */ = {
 			isa = PBXGroup;
 			children = (
-				579AEA9C23E47E2200741E2F /* AppDelegate.swift */,
-				579AEA9E23E47E2200741E2F /* SceneDelegate.swift */,
-				57A576FC23E486CC00EFC252 /* SampleAnimationView.swift */,
-				57A576F823E4807800EFC252 /* SampleAnimationController.swift */,
-				579AEAB023E47FA700741E2F /* AnimationsTabController.swift */,
-				57A576FA23E480B100EFC252 /* ConstraintsAnimationController.swift */,
-				57A576FE23E49B5F00EFC252 /* ConstraintsAnimation.storyboard */,
-				579AEAA523E47E2200741E2F /* Assets.xcassets */,
-				579AEAA723E47E2200741E2F /* LaunchScreen.storyboard */,
+				57A5770123E6062F00EFC252 /* Views */,
+				57A5770023E6062400EFC252 /* Controllers */,
+				57A5770223E6064500EFC252 /* Supporting Files */,
 				579AEAAA23E47E2200741E2F /* Info.plist */,
 			);
 			path = "UIKit-Animations";
+			sourceTree = "<group>";
+		};
+		57A5770023E6062400EFC252 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				579AEAB023E47FA700741E2F /* AnimationsTabController.swift */,
+				57A576F823E4807800EFC252 /* SampleAnimationController.swift */,
+				57A576FA23E480B100EFC252 /* ConstraintsAnimationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		57A5770123E6062F00EFC252 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57A576FC23E486CC00EFC252 /* SampleAnimationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57A5770223E6064500EFC252 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				579AEA9C23E47E2200741E2F /* AppDelegate.swift */,
+				579AEA9E23E47E2200741E2F /* SceneDelegate.swift */,
+				57A576FE23E49B5F00EFC252 /* ConstraintsAnimation.storyboard */,
+				579AEAA523E47E2200741E2F /* Assets.xcassets */,
+				579AEAA723E47E2200741E2F /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
