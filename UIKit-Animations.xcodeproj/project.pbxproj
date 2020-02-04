@@ -12,6 +12,10 @@
 		579AEAA623E47E2200741E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579AEAA523E47E2200741E2F /* Assets.xcassets */; };
 		579AEAA923E47E2200741E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579AEAA723E47E2200741E2F /* LaunchScreen.storyboard */; };
 		579AEAB123E47FA700741E2F /* AnimationsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579AEAB023E47FA700741E2F /* AnimationsTabController.swift */; };
+		57A06D4123E9CB2B00C1E00C /* TransitionAnimationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A06D4023E9CB2B00C1E00C /* TransitionAnimationsController.swift */; };
+		57A06D4323E9CB5F00C1E00C /* TransitionAnimations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A06D4223E9CB5F00C1E00C /* TransitionAnimations.storyboard */; };
+		57A06D4523E9D75400C1E00C /* PropertyAnimatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A06D4423E9D75400C1E00C /* PropertyAnimatorController.swift */; };
+		57A06D4723E9D76C00C1E00C /* PropertyAnimator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A06D4623E9D76C00C1E00C /* PropertyAnimator.storyboard */; };
 		57A576F923E4807800EFC252 /* SampleAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A576F823E4807800EFC252 /* SampleAnimationController.swift */; };
 		57A576FB23E480B100EFC252 /* ConstraintsAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A576FA23E480B100EFC252 /* ConstraintsAnimationController.swift */; };
 		57A576FD23E486CC00EFC252 /* SampleAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A576FC23E486CC00EFC252 /* SampleAnimationView.swift */; };
@@ -26,6 +30,10 @@
 		579AEAA823E47E2200741E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579AEAAA23E47E2200741E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		579AEAB023E47FA700741E2F /* AnimationsTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsTabController.swift; sourceTree = "<group>"; };
+		57A06D4023E9CB2B00C1E00C /* TransitionAnimationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationsController.swift; sourceTree = "<group>"; };
+		57A06D4223E9CB5F00C1E00C /* TransitionAnimations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransitionAnimations.storyboard; sourceTree = "<group>"; };
+		57A06D4423E9D75400C1E00C /* PropertyAnimatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyAnimatorController.swift; sourceTree = "<group>"; };
+		57A06D4623E9D76C00C1E00C /* PropertyAnimator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PropertyAnimator.storyboard; sourceTree = "<group>"; };
 		57A576F823E4807800EFC252 /* SampleAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationController.swift; sourceTree = "<group>"; };
 		57A576FA23E480B100EFC252 /* ConstraintsAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsAnimationController.swift; sourceTree = "<group>"; };
 		57A576FC23E486CC00EFC252 /* SampleAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAnimationView.swift; sourceTree = "<group>"; };
@@ -76,6 +84,8 @@
 				579AEAB023E47FA700741E2F /* AnimationsTabController.swift */,
 				57A576F823E4807800EFC252 /* SampleAnimationController.swift */,
 				57A576FA23E480B100EFC252 /* ConstraintsAnimationController.swift */,
+				57A06D4423E9D75400C1E00C /* PropertyAnimatorController.swift */,
+				57A06D4023E9CB2B00C1E00C /* TransitionAnimationsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -92,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				579AEA9C23E47E2200741E2F /* AppDelegate.swift */,
-				579AEA9E23E47E2200741E2F /* SceneDelegate.swift */,
+				57A06D4623E9D76C00C1E00C /* PropertyAnimator.storyboard */,
 				57A576FE23E49B5F00EFC252 /* ConstraintsAnimation.storyboard */,
+				57A06D4223E9CB5F00C1E00C /* TransitionAnimations.storyboard */,
+				579AEA9E23E47E2200741E2F /* SceneDelegate.swift */,
 				579AEAA523E47E2200741E2F /* Assets.xcassets */,
 				579AEAA723E47E2200741E2F /* LaunchScreen.storyboard */,
 			);
@@ -158,7 +170,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A06D4323E9CB5F00C1E00C /* TransitionAnimations.storyboard in Resources */,
 				579AEAA923E47E2200741E2F /* LaunchScreen.storyboard in Resources */,
+				57A06D4723E9D76C00C1E00C /* PropertyAnimator.storyboard in Resources */,
 				579AEAA623E47E2200741E2F /* Assets.xcassets in Resources */,
 				57A576FF23E49B5F00EFC252 /* ConstraintsAnimation.storyboard in Resources */,
 			);
@@ -177,6 +191,8 @@
 				579AEAB123E47FA700741E2F /* AnimationsTabController.swift in Sources */,
 				579AEA9F23E47E2200741E2F /* SceneDelegate.swift in Sources */,
 				57A576FB23E480B100EFC252 /* ConstraintsAnimationController.swift in Sources */,
+				57A06D4523E9D75400C1E00C /* PropertyAnimatorController.swift in Sources */,
+				57A06D4123E9CB2B00C1E00C /* TransitionAnimationsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

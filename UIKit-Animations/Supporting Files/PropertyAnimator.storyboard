@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Property Animator Controller-->
+        <scene sceneID="gzY-S2-SPd">
+            <objects>
+                <viewController storyboardIdentifier="PropertyAnimatorController" id="Xe1-Q4-Mna" customClass="PropertyAnimatorController" customModule="UIKit_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6uW-3m-fqD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="duck" translatesAutoresizingMaskIntoConstraints="NO" id="eZ0-G5-Ic4">
+                                <rect key="frame" x="103.5" y="344.5" width="207" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eZ0-G5-Ic4" secondAttribute="height" multiplier="1:1" id="W7R-ak-IQA"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-I0-47Y">
+                                <rect key="frame" x="38" y="710" width="338" height="31"/>
+                                <connections>
+                                    <action selector="sliderDidChange:" destination="Xe1-Q4-Mna" eventType="valueChanged" id="QQC-mk-QOy"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eRM-GD-fdf" firstAttribute="bottom" secondItem="3gg-I0-47Y" secondAttribute="bottom" constant="122" id="286-I1-KDv"/>
+                            <constraint firstItem="eZ0-G5-Ic4" firstAttribute="width" secondItem="6uW-3m-fqD" secondAttribute="width" multiplier="0.5" id="5bl-6d-xIe"/>
+                            <constraint firstItem="eZ0-G5-Ic4" firstAttribute="centerY" secondItem="6uW-3m-fqD" secondAttribute="centerY" id="WIO-Yl-brc"/>
+                            <constraint firstItem="eZ0-G5-Ic4" firstAttribute="centerX" secondItem="6uW-3m-fqD" secondAttribute="centerX" id="fcQ-gg-vDj"/>
+                            <constraint firstItem="3gg-I0-47Y" firstAttribute="leading" secondItem="eRM-GD-fdf" secondAttribute="leading" constant="40" id="kNL-vi-MKx"/>
+                            <constraint firstItem="eRM-GD-fdf" firstAttribute="trailing" secondItem="3gg-I0-47Y" secondAttribute="trailing" constant="40" id="yHu-I7-1pS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eRM-GD-fdf"/>
+                    </view>
+                    <connections>
+                        <outlet property="duckImage" destination="eZ0-G5-Ic4" id="OMy-55-1J3"/>
+                        <outlet property="slider" destination="3gg-I0-47Y" id="soh-Au-GlR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMA-qb-PLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="duck" width="800" height="800"/>
+    </resources>
+</document>
