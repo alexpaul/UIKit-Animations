@@ -84,8 +84,8 @@
 				579AEAB023E47FA700741E2F /* AnimationsTabController.swift */,
 				57A576F823E4807800EFC252 /* SampleAnimationController.swift */,
 				57A576FA23E480B100EFC252 /* ConstraintsAnimationController.swift */,
-				57A06D4423E9D75400C1E00C /* PropertyAnimatorController.swift */,
 				57A06D4023E9CB2B00C1E00C /* TransitionAnimationsController.swift */,
+				57A06D4423E9D75400C1E00C /* PropertyAnimatorController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -102,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				579AEA9C23E47E2200741E2F /* AppDelegate.swift */,
-				57A06D4623E9D76C00C1E00C /* PropertyAnimator.storyboard */,
 				57A576FE23E49B5F00EFC252 /* ConstraintsAnimation.storyboard */,
 				57A06D4223E9CB5F00C1E00C /* TransitionAnimations.storyboard */,
+				57A06D4623E9D76C00C1E00C /* PropertyAnimator.storyboard */,
 				579AEA9E23E47E2200741E2F /* SceneDelegate.swift */,
 				579AEAA523E47E2200741E2F /* Assets.xcassets */,
 				579AEAA723E47E2200741E2F /* LaunchScreen.storyboard */,

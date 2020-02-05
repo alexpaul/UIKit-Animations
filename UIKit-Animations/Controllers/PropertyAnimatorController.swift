@@ -18,8 +18,8 @@ class PropertyAnimatorController: UIViewController {
   private var animator: UIViewPropertyAnimator!
   
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
     
     // instantiate the animator property
     animator = UIViewPropertyAnimator(duration: 2.0, curve: .easeInOut, animations: {
@@ -29,10 +29,19 @@ class PropertyAnimatorController: UIViewController {
     })
   }
   
+  override func viewWillDisappear(_ animated: Bool) {
+     super.viewWillDisappear(true)
+     resetValues()
+   }
+   
+   private func resetValues() {
+     slider.value = 0
+     animator.stopAnimation(true)
+     self.duckImage.transform = CGAffineTransform.identity
+   }
+  
   @IBAction func sliderDidChange(_ sender: UISlider) {
-    
     animator.fractionComplete = CGFloat(sender.value)
-    
   }
   
   
